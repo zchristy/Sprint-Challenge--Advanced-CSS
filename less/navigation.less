@@ -1,1 +1,42 @@
-// Navigation code here
+.navbar {
+  .display(flex, row, center);
+  border-bottom: 1px dashed @nav-border;
+  background-color: @nav-bg;
+
+  .navbar-container {
+    .display(flex, column, space-between);
+    align-items: center;
+    padding: 10px 0;
+    max-width: 800px;
+    width: 100%;
+
+    // @media @mobile {
+    //   flex-direction: column;
+    //   padding: 20px 0 10px 0;
+    // }
+
+    h1{
+      font-size: 4.5rem;
+      margin-bottom: 20px;
+      // @media @mobile {
+      //   margin-bottom: 15px;
+      //   font-size: 3rem;
+      // }
+    }
+
+    nav {
+      // @media @mobile {
+      //   .display(flex, row, space-around);
+      //   width: 100%;
+      //   margin-bottom: 0;
+      // }
+
+      a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: black;
+        margin: 0 20px;
+      }
+    }
+  }
+}// Navbar
