@@ -10,32 +10,27 @@
     max-width: 800px;
     width: 100%;
 
-    // @media @mobile {
-    //   flex-direction: column;
-    //   padding: 20px 0 10px 0;
-    // }
-
     h1{
-      font-size: 4.5rem;
+      font-size: 4rem;
       margin-bottom: 20px;
-      // @media @mobile {
-      //   margin-bottom: 15px;
-      //   font-size: 3rem;
-      // }
     }
 
     nav {
-      // @media @mobile {
-      //   .display(flex, row, space-around);
-      //   width: 100%;
-      //   margin-bottom: 0;
-      // }
+      @media @phone {
+        .display(flex, row, space-between);
+        width: 75%;
+        margin: 0;
+      }
 
       a {
         font-size: 1.6rem;
         text-decoration: none;
-        color: black;
-        margin: 0 20px;
+        color: @river-bend;
+        margin: 0 15px;
+
+        @media @phone {
+          margin: 0;
+        }
       }
     }
   }
