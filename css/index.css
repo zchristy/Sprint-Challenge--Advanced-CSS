@@ -336,10 +336,11 @@ footer {
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
+  transition: 0.2s linear;
 }
 .home .walk .walk-text .btn:hover {
   color: #22283A;
-  border: 1px solid #22283A;
+  border: 2px solid #22283A;
   background-color: #F6F7F8;
 }
 @media (max-width: 500px) {
