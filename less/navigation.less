@@ -1,1 +1,60 @@
-// Navigation code here
+.animated {
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.navbar {
+  .display(flex, row, center);
+  border-bottom: 1px dashed @nav-border;
+  background-color: @nav-bg;
+
+
+  .navbar-container {
+    .display(flex, column, space-between);
+    align-items: center;
+    padding: 10px 0;
+    max-width: 800px;
+    width: 100%;
+
+    h1{
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      @media @phone {
+        .display(flex, row, space-between);
+        width: 75%;
+        margin: 0;
+      }
+
+      a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: @river-bend;
+        margin: 0 15px;
+
+        @media @phone {
+          margin: 0;
+        }
+      }
+    }
+  }
+}// Navbar

@@ -1,1 +1,24 @@
-// Mixins Here
+.display(@display: flex, @direction, @justifyCnt) {
+  display: @display;
+  flex-direction: @direction;
+  justify-content: @justifyCnt;
+}
+
+.custom-btn(@fontColor: @porcelain, @borderColor: @btn-bg-color, @background: @btn-bg-color, @fontColorHover: @btn-bg-color, @borderColorHover: @btn-bg-color, @backgroundHover: @porcelain) {
+  color: @fontColor;
+  border: 2px solid @borderColor;
+  background-color: @background;
+  max-width: 100px;
+  padding: 9px 10px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: @fontColorHover;
+    border: 2px solid @borderColorHover;
+    background-color: @backgroundHover;
+  }
+}
